@@ -1,3 +1,4 @@
+import Experience from "./components/experience/Experience";
 import Me from "./components/me/Me";
 import Skills from "./components/skills/Skills";
 
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <Me />
       <Skills />
+      <Experience />
     </div>
   );
 }

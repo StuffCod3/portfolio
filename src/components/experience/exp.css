@@ -1,0 +1,50 @@
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 54px;
+    margin-bottom: 24px;
+}
+
+.project-button {
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    background: #1c1f2b;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.project-button:hover {
+    background: #2a2d3a;
+}
+
+.project-button.active {
+    border-color: var(--primaryColor);
+    background: var(--dopCollor);
+}
+
+.project-details {
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 68px 0px rgba(255, 255, 255, 0.05),inset 0px 4px 4px 0px rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(48px);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.project-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 16px;
+}
+
+.project-details li {
+    color: var(--textColor);
+    margin-bottom: 10px;
+}
+
+li::marker {
+    color: var(--primaryColor);
+  }
