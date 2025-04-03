@@ -1,7 +1,9 @@
 .skills__content{
     display: flex;
     align-items: center;
-    gap: 250px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 48px;
 }
 
 .skills__techs{
@@ -28,4 +30,20 @@
 
 .skills__list li:hover{
     background-color: var(--accentColor);
+}
+
+@media (max-width: 995px) { /* Укажите нужную ширину breakpoint */
+    .skills__content {
+        justify-content: center;
+    }
+
+    .Skills{
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 560px) { /* Укажите нужную ширину breakpoint */
+    .skills__techs{
+        width: 273px;
+    }
 }

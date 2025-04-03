@@ -1,12 +1,14 @@
 .me__content{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 48px;
 }
 
 .me__image img{
     width: 300px;
-    height: 300px;
+    height: auto;
     border-radius: 1000px;
 }
 
@@ -25,4 +27,26 @@
 
 .socials img:hover{
     opacity: 1;
+}
+
+@media (max-width: 1208px) { /* Укажите нужную ширину breakpoint */
+    .me__content {
+        justify-content: center;
+    }
+
+    .Me{
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 500px) { /* Укажите нужную ширину breakpoint */
+    .me__image img{
+        width: 200px;
+    }
+}
+
+@media (max-width: 400px) { /* Укажите нужную ширину breakpoint */
+    .me__image {
+        display: none;
+    }
 }
